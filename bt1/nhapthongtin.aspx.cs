@@ -34,5 +34,16 @@ namespace bt1
             cklsothich.Items.Add("mua sam");
             cklsothich.Items.Add("doc sach");
         }
+
+        protected System.Void btngui_Click(System.Object sender, System.EventArgs e)
+        {
+            //b1. thu nhap thong tin
+            string kq = "<ul>";
+            kq += "<li>Họ tên: <b> " + txthoten.Text + "</b>";
+
+            kq += "</ul>";
+            //b2 gui thong tin ve client
+            lblkq.Text = kq;
+        }
     }
 }

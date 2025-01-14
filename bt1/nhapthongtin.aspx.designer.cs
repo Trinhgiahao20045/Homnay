@@ -24,93 +24,102 @@ namespace bt1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txthoten control.
+        /// txtTen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txthoten;
+        protected global::System.Web.UI.WebControls.TextBox txtTen;
 
         /// <summary>
-        /// txtngaysinh control.
+        /// txtNgay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtngaysinh;
+        protected global::System.Web.UI.WebControls.TextBox txtNgay;
 
         /// <summary>
-        /// rdnam control.
+        /// rNam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdnam;
+        protected global::System.Web.UI.WebControls.RadioButton rNam;
 
         /// <summary>
-        /// rdnu control.
+        /// rNu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdnu;
+        protected global::System.Web.UI.WebControls.RadioButton rNu;
 
         /// <summary>
-        /// ddltrinhdo control.
+        /// DdlTrinhDo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddltrinhdo;
+        protected global::System.Web.UI.WebControls.DropDownList DdlTrinhDo;
 
         /// <summary>
-        /// lstnghe control.
+        /// LbNgheNghiep control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstnghe;
+        protected global::System.Web.UI.WebControls.ListBox LbNgheNghiep;
 
         /// <summary>
-        /// fhinh control.
+        /// FHinh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fhinh;
+        protected global::System.Web.UI.WebControls.FileUpload FHinh;
 
         /// <summary>
-        /// cklsothich control.
+        /// CbLSoThich control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cklsothich;
+        protected global::System.Web.UI.WebControls.CheckBoxList CbLSoThich;
 
         /// <summary>
-        /// btngui control.
+        /// btGui control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btngui;
+        protected global::System.Web.UI.WebControls.Button btGui;
 
         /// <summary>
-        /// btnnhaplai control.
+        /// btLamLai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnnhaplai;
+        protected global::System.Web.UI.WebControls.Button btLamLai;
+
+        /// <summary>
+        /// LbKq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbKq;
     }
 }

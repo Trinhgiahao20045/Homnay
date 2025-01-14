@@ -7,85 +7,75 @@
     <title></title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <style type="text/css">
-        #form1 {
-            height: 99px;
-        }
         .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 176px;
-        }
-        .auto-style10 {
-            height: 21px;
+            width: 284px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <table class="auto-style1">
-            <tr>
-                <td colspan="2"><strong>Dang ky thong tin</strong></td>
-            </tr>
-            <tr>
-                <td class="text-end">Ho va ten:</td>
-                <td>
-                    <asp:TextBox ID="txthoten" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-end">Ngay sinh:</td>
-                <td>
-                    <asp:TextBox ID="txtngaysinh" runat="server" TextMode="Date"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-end">gioi tinh:</td>
-                <td>
-                    <asp:RadioButton ID="rdnam" runat="server" Text="Nam" Checked="true" GroupName="GT" />
-                    <asp:RadioButton ID="rdnu" runat="server" Text="Nữ" GroupName="GT" />
-                </td>
-            </tr>
-            <tr>
-                <td class="text-end">trinh do:</td>
-                <td>
-                    <asp:DropDownList ID="ddltrinhdo" runat="server" CssClass="form-select">
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-end">nghe nghiep:</td>
-                <td>
-                    <asp:ListBox ID="lstnghe" runat="server" Rows="6" CssClass="form-control"></asp:ListBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-end">hinh:</td>
-                <td>
-                    <asp:FileUpload ID="fhinh" runat="server" CssClass="form-control"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-end">so thich:</td>
-                <td>
-                    <asp:CheckBoxList ID="cklsothich" runat="server" CssClass="form-control">
-                    </asp:CheckBoxList>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <asp:Button ID="btngui" runat="server" Text="gửi" CssClass="btn-outline-primary" />
-                    <asp:Button ID="btnnhaplai" runat="server" Text="nhập lại" CssClass="btn-outline-warning" />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style10" colspan="2">Ket qua dang ky</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
+        <div class=" container w-50">
+            <table align="center" cellpadding="4" cellspacing="0" class="w-100">
+                <tr>
+                    <td class="text-center h3 bg-danger" colspan="2"><strong>ĐĂNG KÍ THÔNG TIN&nbsp;</strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Họ và tên</td>
+                    <td>
+                        <asp:TextBox ID="txtTen" runat="server" CssClass="form-control" required=""></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Ngày sinh</td>
+                    <td>
+                        <asp:TextBox ID="txtNgay" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Giới tinh</td>
+                    <td>
+                        <asp:RadioButton ID="rNam" runat="server" Text="Nam" GroupName="namnu" Checked="true" CssClass="form-check-inline" />
+                        <asp:RadioButton ID="rNu" runat="server" Text="Nữ" GroupName="namnu" CssClass="form-check-inline"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Trình dộ</td>
+                    <td>
+                        <asp:DropDownList ID="DdlTrinhDo" runat="server" CssClass="form-select">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Nghề nghiệp</td>
+                    <td>
+                        <asp:ListBox ID="LbNgheNghiep" runat="server" required="" ></asp:ListBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Hình</td>
+                    <td>
+                        <asp:FileUpload ID="FHinh" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">Sở thích</td>
+                    <td>
+                        <asp:CheckBoxList ID="CbLSoThich" runat="server" CssClass="form-check">
+                        </asp:CheckBoxList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btGui" runat="server" Text="Gửi" CssClass="btn btn-primary" OnClick="btGui_Click"/>
+                        <asp:Button ID="btLamLai" runat="server" Text="Làm lại" CssClass="btn btn-dark" OnClick="btLamLai_Click" />
+                    </td>
+                </tr> 
+                                
+            </table>
+            <asp:Label ID="LbKq" runat="server"></asp:Label>
+        </div>
     </form>
 </body>
 </html>
+
